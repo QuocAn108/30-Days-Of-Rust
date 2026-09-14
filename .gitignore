@@ -1,0 +1,19 @@
+# Bỏ qua thư mục build của Rust (bao gồm mọi thư mục con trong exercises/dayX/target)
+**/target/
+target/
+
+# Bỏ qua các file sinh ra khi chạy cargo test/benchmark
+**/*.rs.bk
+
+# Bỏ qua file binary khi biên dịch thủ công
+*.pdb
+
+# Editor / IDE files (nếu có)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
