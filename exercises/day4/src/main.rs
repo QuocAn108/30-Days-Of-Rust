@@ -75,10 +75,7 @@ fn main() {
         None => println!("Invalid operation or division by zero"),
     }
     let mut numbers_to_sort = [64, 34, 25, 12, 22, 11, 90];
-    ex2::sort_bubble(&mut numbers_to_sort);
+    ex2::sort_bubble(numbers_to_sort.as_mut_slice());
     println!("Sorted array: {:?}", numbers_to_sort);
-    println!(
-        "Area of circle with radius 3.0: {:.2}",
-        ex2::area_circle(3.0)
-    );
+    ex2::cal_circle(3.0);
 }
