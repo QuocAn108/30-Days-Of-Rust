@@ -45,8 +45,8 @@ fn main() {
     println!("Multiplication table for {}:", num);
     ex1::multiply_number(num);
 
-    let num1 = 48;
-    let num2 = 18;
+    let num1 = 18;
+    let num2 = 48;
     println!(
         "GCD of {} and {}: {}",
         num1,
