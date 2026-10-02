@@ -23,6 +23,9 @@ fn main() {
     } else {
         println!("The colors are not equal.");
     }
+
+    println!("Triggering check...");
+    let _check = trigger_check();
 }
 
 struct RGB(i32, i32, i32);
@@ -31,8 +34,8 @@ impl RGB {
         self.0 == other.0 && self.1 == other.1 && self.2 == other.2
     }
 }
-fn trigger_check() {
+fn trigger_check() -> IsEqual {
     println!("Signal triggered!");
-    IsEqual;
+    IsEqual
 }
 struct IsEqual;
