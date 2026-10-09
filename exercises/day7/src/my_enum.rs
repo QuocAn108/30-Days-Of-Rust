@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub enum Card {
     CreditCard(String),
     DebitCard(String),
@@ -27,7 +28,6 @@ pub fn print_weather(weather: Weather) {
         Weather::Rainy => println!("It's raining outside."),
         Weather::Cloudy => println!("The sky is cloudy."),
         Weather::Windy => println!("It's quite windy today."),
-        _ => println!("Unknown weather condition."),
     }
 }
 
@@ -45,17 +45,17 @@ pub fn print_device(device: Device) {
     }
 }
 
-pub enum trafficLight {
+pub enum TrafficLight {
     Red(String),
     Yellow(String),
     Green(String),
 }
 
-pub fn print_traffic_light(light: trafficLight) {
+pub fn print_traffic_light(light: TrafficLight) {
     match light {
-        trafficLight::Red(time) => println!("Red: {}", time),
-        trafficLight::Yellow(time) => println!("Yellow: {}", time),
-        trafficLight::Green(time) => println!("Green: {}", time),
+        TrafficLight::Red(time) => println!("Red: {}", time),
+        TrafficLight::Yellow(time) => println!("Yellow: {}", time),
+        TrafficLight::Green(time) => println!("Green: {}", time),
     }
 }
 
@@ -103,17 +103,17 @@ pub fn check_order_status(status: OrderStatus) {
     }
 }
 
-pub enum shape {
+pub enum Shape {
     Circle(f64),
     Rectangle(f64, f64),
-    Triangle(f64, f64, f64),
+    Triangle(f64, f64),
 }
 use std::f64::consts::PI;
-pub fn calculate_area(shape: shape) {
+pub fn calculate_area(shape: Shape) {
     let pi = PI;
     match shape {
-        shape::Circle(radius) => println!("Area of Circle: {}", pi * radius * radius),
-        shape::Rectangle(width, height) => println!("Area of Rectangle: {}", width * height),
-        shape::Triangle(base, height, _) => println!("Area of Triangle: {}", 0.5 * base * height),
+        Shape::Circle(radius) => println!("Area of Circle: {}", pi * radius * radius),
+        Shape::Rectangle(width, height) => println!("Area of Rectangle: {}", width * height),
+        Shape::Triangle(base, height) => println!("Area of Triangle: {}", 0.5 * base * height),
     }
 }

@@ -28,10 +28,10 @@ pub fn print_ex1() {
     let iphone = my_enum::Device::Smartphone(String::from("iPhone 13"));
     my_enum::print_device(iphone);
 
-    let red_light = my_enum::trafficLight::Red(String::from("30 seconds"));
+    let red_light = my_enum::TrafficLight::Red(String::from("30 seconds"));
     my_enum::print_traffic_light(red_light);
-    let yellow_light = my_enum::trafficLight::Yellow(String::from("5 seconds"));
+    let yellow_light = my_enum::TrafficLight::Yellow(String::from("5 seconds"));
     my_enum::print_traffic_light(yellow_light);
-    let green_light = my_enum::trafficLight::Green(String::from("20 seconds"));
+    let green_light = my_enum::TrafficLight::Green(String::from("20 seconds"));
     my_enum::print_traffic_light(green_light);
 }
