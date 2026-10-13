@@ -1,9 +1,9 @@
+mod ex1;
+mod ex2;
+mod example;
+
 fn main() {
-    let mut greeting = String::from("Hello");
-
-    greeting.push_str(", world!");
-    println!("{}", greeting);
-
-    let substring = &greeting[0..5]; // "Hello"
-    println!("Substring: {}", substring);
+    example::example();
+    ex1::ex1();
+    ex2::ex2();
 }
