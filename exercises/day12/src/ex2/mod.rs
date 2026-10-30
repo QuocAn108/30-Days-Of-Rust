@@ -71,3 +71,4 @@ pub fn ex2() {
     println!("Random Color chosen: {}", random_color);
     println!();
 }
+

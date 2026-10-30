@@ -23,3 +23,4 @@ pub fn ex() {
     println!("Area of rectangle: {}", area);
     println!();
 }
+

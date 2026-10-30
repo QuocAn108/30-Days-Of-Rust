@@ -20,3 +20,4 @@ pub fn median(numbers: &[f64]) -> Option<f64> {
         Some(sorted[mid])
     }
 }
+

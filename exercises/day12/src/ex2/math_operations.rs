@@ -31,3 +31,4 @@ pub mod trigonometry {
         degrees.to_radians()
     }
 }
+

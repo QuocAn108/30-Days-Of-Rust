@@ -25,3 +25,4 @@ pub fn ex1() {
     println!("Unit Converter: {} kilometers = {} meters", km_val, m);
     println!();
 }
+
